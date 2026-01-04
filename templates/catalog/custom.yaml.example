@@ -1,0 +1,71 @@
+# Custom MCP Server Catalog
+#
+# This file defines your custom MCP servers for Docker Desktop.
+# Place this file in: ~/.docker/mcp/catalogs/custom.yaml
+#
+# After adding/modifying, update catalog.json to reference this file.
+
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  # ============================================================================
+  # Example Server Entry
+  # ============================================================================
+  my-mcp-server:
+    # Basic Information
+    description: "Description of what your MCP server does"
+    title: "My MCP Server"
+    type: server
+    dateAdded: "2026-01-03T00:00:00Z"
+    
+    # Docker Image - MUST match your `docker build -t <name>` exactly!
+    image: my-mcp-server:latest
+    
+    # Leave these empty for local servers
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    
+    # List ALL tool names from your server code
+    tools:
+      - name: greet
+      - name: calculate
+      - name: fetch_data
+    
+    # Secrets (environment variables passed to the container)
+    # secrets:
+    #   - name: api_key
+    #     required: true
+    #     description: "API key for external service"
+    secrets: []
+    
+    # Metadata
+    metadata:
+      category: other  # Options: productivity, monitoring, automation, integration, other
+      tags:
+        - custom
+        - template
+      license: MIT
+      owner: local
+
+  # ============================================================================
+  # Add More Servers Below
+  # ============================================================================
+  
+  # another-server:
+  #   description: "Another custom server"
+  #   title: "Another Server"
+  #   type: server
+  #   image: another-server:latest
+  #   tools:
+  #     - name: tool_one
+  #     - name: tool_two
+  #   secrets: []
+  #   metadata:
+  #     category: automation
+  #     tags:
+  #       - example

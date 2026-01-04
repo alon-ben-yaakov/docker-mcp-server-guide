@@ -1,0 +1,27 @@
+# My MCP Server - Catalog Entry
+# Use with: docker mcp catalog import ./catalog-entry.yaml
+
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  my-server:
+    description: "My custom MCP server - update this description"
+    title: "My MCP Server"
+    type: server
+    image: my-mcp-server:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: greet
+      - name: calculate
+      - name: fetch_data
+    secrets: []
+    metadata:
+      category: other
+      tags:
+        - custom

@@ -1,0 +1,17 @@
+# Registry - Enabled MCP Servers
+#
+# This file controls which servers are enabled.
+# Place/edit at: ~/.docker/mcp/registry.yaml
+#
+# Only servers listed here will be loaded by the gateway.
+
+registry:
+  # Add your server names here (must match keys in catalog YAML)
+  my-mcp-server:
+    ref: ""
+  
+  # Example: enabling official Docker MCP servers
+  # obsidian:
+  #   ref: ""
+  # filesystem:
+  #   ref: ""

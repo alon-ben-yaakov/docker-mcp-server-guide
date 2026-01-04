@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Optional npm cache
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Package lock (keep for examples, ignore for templates)
+# templates/**/package-lock.json

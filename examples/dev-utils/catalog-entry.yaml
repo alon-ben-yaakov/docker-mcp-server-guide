@@ -1,0 +1,44 @@
+# Dev Utils MCP Server - Catalog Entry
+# Use with: docker mcp catalog import ./catalog-entry.yaml
+
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  dev-utils:
+    description: "Developer utilities - UUID, hashing, encoding, timestamps, JSON, regex, and more"
+    title: "Dev Utils"
+    type: server
+    image: dev-utils-mcp:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: generate_uuid
+      - name: hash
+      - name: base64_encode
+      - name: base64_decode
+      - name: url_encode
+      - name: url_decode
+      - name: timestamp_now
+      - name: timestamp_convert
+      - name: json_format
+      - name: json_minify
+      - name: regex_test
+      - name: regex_replace
+      - name: string_case
+      - name: string_length
+      - name: color_convert
+      - name: number_convert
+      - name: lorem_ipsum
+    secrets: []
+    metadata:
+      category: productivity
+      tags:
+        - developer
+        - utilities
+        - encoding
+        - hashing

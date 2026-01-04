@@ -1,0 +1,36 @@
+# Dice Roller MCP Server - Catalog Entry
+# Use with: docker mcp catalog import ./catalog-entry.yaml
+
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  dice-roller:
+    description: "Dice rolling mechanics for tabletop RPGs - D&D, Pathfinder, Fate, and more"
+    title: "Dice Roller"
+    type: server
+    image: dice-roller-mcp:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: roll_dice
+      - name: coin_flip
+      - name: roll_advantage
+      - name: roll_disadvantage
+      - name: roll_exploding
+      - name: roll_pool
+      - name: roll_fate
+      - name: roll_percentile
+      - name: pick_random
+    secrets: []
+    metadata:
+      category: other
+      tags:
+        - gaming
+        - dice
+        - tabletop
+        - rpg
