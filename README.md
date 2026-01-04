@@ -39,15 +39,11 @@ A complete guide to building custom MCP (Model Context Protocol) servers using D
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
 
 2. **Docker MCP Beta feature enabled:**
-   
-   ![Docker Desktop Configuration](assets/docker-desktop-configuration.gif)
-   
+      
    Open Docker Desktop → Settings → Beta Features → Enable "MCP Toolkit"
 
 3. **Claude Desktop connected via Docker MCP:**
-   
-   ![Claude Connections](assets/claude-connections.gif)
-   
+      
    In Docker Desktop → Settings → MCP → Clients → Connect Claude Desktop
 
 ### ⚡ 30-Second Start (Try the Example)
